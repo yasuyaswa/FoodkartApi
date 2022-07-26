@@ -1,0 +1,32 @@
+﻿@model FoodkartApi.Model.Customer
+
+@{
+    ViewData["Title"] = "CLogin";
+}
+
+<h1>Login</h1>
+
+<h4>LoginViewModel</h4>
+<section id="log">
+    <h4>Customer Login</h4>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CLogin">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CustomerMobile" class="control-label"></label>
+                <input asp-for="CustomerMobile" class="form-control" />
+                <span asp-validation-for="CustomerMobile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerPass" class="control-label"></label>
+                <input asp-for="CustomerPass" class="form-control" />
+                <span asp-validation-for="CustomerPass" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="LogIn" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+</section>
