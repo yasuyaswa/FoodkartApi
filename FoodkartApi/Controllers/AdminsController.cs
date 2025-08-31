@@ -15,6 +15,7 @@ namespace FoodkartApi.Controllers
     [ApiController]
     //for sample comment added for testing purposes
     //1243546 789
+    //another comment added
     public class AdminsController : ControllerBase
     {
         private readonly FoodAppContext _context;
