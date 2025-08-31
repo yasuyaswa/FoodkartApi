@@ -14,7 +14,7 @@ namespace FoodkartApi.Controllers
     [Route("api/[controller]")]
     [ApiController]
     //for sample comment added for testing purposes
-    //1243546 789
+    //1243546 7890
     public class AdminsController : ControllerBase
     {
         private readonly FoodAppContext _context;
